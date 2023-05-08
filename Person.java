@@ -1,11 +1,15 @@
-package architaTrials.interfaces;
+package architaTrials.inheritance;
 
-public interface Person {
+public class Person extends Object{
 	
-	 public default void reproduce() {
-		System.out.println("reproduce");
+	
+	//you're overriding the to string method of the object
+	//class
+	@Override
+	public String toString() {
+		return "person";
 	}
-	 
-	public void breathe();
-
+	
+	
 }
+	

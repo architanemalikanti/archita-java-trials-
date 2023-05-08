@@ -1,22 +1,32 @@
-package architaTrials.interfaces;
+package architaTrials.inheritance;
 
-public class Circle extends Shape{
-
-	private int radius;
+public class Circle extends Shape {
 	
-	//constructor
-	public Circle(int radius) {
-		this.radius = radius;
+	private double radius;
+	
+	public Circle() {
+		super("brown", true);
 	}
 	
-	//implementation of abstract methods
+	public Circle(double r) {
+		super("brown", true);
+		this.radius = r;
+	}
+	
+	public Circle(double radius, String color, boolean filled) {
+		super("brown", true);
+		this.radius  = radius;
+		setColor(color);
+		setFilled(filled);
+		
+	}
+	public String toString() {
+		return super.toString();
+	}
 	
 	public double getArea() {
-		return 3.14*Math.pow((this.radius), 2);
+		return 3.14*Math.pow(this.radius, 2);
 	}
 	
-	public double getPerimeter() {
-		return 3.14*2*this.radius;
-	}
-
+	
 }

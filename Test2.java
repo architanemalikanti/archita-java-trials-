@@ -1,11 +1,20 @@
-package architaTrials.IOexceptions;
+package architaTrials.inheritance;
 
-public class Test2 {
+class Circle1{
+	double radius;
 	
-		public static void main(String[] args)
-		throws java.io.IOException { try (java.io.PrintWriter output =
-		new java.io.PrintWriter("t.txt"); ) { output.printf("%s", "1234"); output.printf("%s", "5678"); output.close();
-		} }
-		}
+	
 
+	@Override
+	public boolean equals(Object o) {
+		return this.radius == ((Circle)o).radius;
+	}
+}
 
+class Test2{
+	public static void main(String args[]) {
+		Object circle1 = new Circle();
+		Object circle2 = new Circle();
+		System.out.println(circle1.equals(circle2));
+	}
+}
