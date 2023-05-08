@@ -1,15 +1,21 @@
-package architaTrials.inheritance;
+package architaTrials.Demos;
 
-public class Person extends Object{
+public class Person {
 	
+	protected String name;
+	protected int age;
+	protected String address;
 	
-	//you're overriding the to string method of the object
-	//class
-	@Override
-	public String toString() {
-		return "person";
+	protected void printInfo() {
+		System.out.println("haha");
 	}
 	
 	
-}
 	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

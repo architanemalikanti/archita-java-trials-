@@ -1,13 +1,20 @@
-package architaTrials.inheritance;
+package architaTrials.Demos;
 
-class Person1{
+public class Person1 {
 	
-	private String getInfo() {
-		return "person";
+	
+	public int tester(int i) {
+		assert(i>1);
+		return i;
 	}
-	
-	public void printPerson() {
-		System.out.println(getInfo());
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Person1 obj = new Person1();
+		System.out.println(obj.tester(0));
+		
+
 	}
-	
+
 }
