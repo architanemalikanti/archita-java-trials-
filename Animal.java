@@ -1,49 +1,19 @@
-package architaTrials.interfaces;
+package architaTrials.project;
 
-//animal interface
-interface Animal{
-	
-	
-	//abstract methods of the interface
-	public void animalSound();
-	public void run();
-	
-	
-}//end animal interface
+import java.util.Date;
 
-//Pig "implements" animal interface
+public interface Animal {
+	
+	public Date getDOB();
+	
+	public void getName(String name);
+	
+	public void sleep();
+	
+	public void drinkWater();
+	
+	public int getAge();
+	
+	
 
-class Pig implements Animal{
-	
-	public void animalSound() {
-		System.out.println("oink oink");
-	}
-	
-	public void run() {
-		System.out.println("run!");
-	}
-	
-	public void sleep() {
-		System.out.println("ZZZ");
-	}
-	
-	
-	
-}//end Pig
-
-
-//main class
-
-class Main{
-	
-	public static void main(String args[]) {
-		Pig myPig = new Pig();
-		
-		myPig.animalSound();
-		myPig.run();
-		myPig.sleep();
-	}
-	
-	
-	
 }
