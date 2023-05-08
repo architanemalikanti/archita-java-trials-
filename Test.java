@@ -1,16 +1,18 @@
-package architaTrials.inheritance;
+package architaTrials.exceptions;
 
-class Test{
-	public static void main(String args[]) {
-		new Person1().printPerson();
-		new Student1().printPerson();
+public class Test {
+
+	public static void main(String[] args) {
 		
-		Circle circle = new Circle(1.0);
-		Shape object1 = new Shape();
-		
-		System.out.println(circle instanceof Shape);
-		System.out.println(object1 instanceof Shape);
-		System.out.println(circle instanceof Circle);
-		System.out.println(object1 instanceof Circle);
+		for(int i = 0; i <2; i++) {
+			System.out.println(i+" ");
+			
+			try {
+				System.out.println(1/0);
+			}
+			catch(Exception ex){
+				
+			}
+		}
 	}
 }
