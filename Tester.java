@@ -1,23 +1,18 @@
-package architaTrials.recursion;
+package architaTrials.A1;
+
+import java.math.BigInteger;
 
 public class Tester {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		
-		Series obj = new Series();
-		System.out.println(obj.series1(3));
-		System.out.println("the number of times the method is called is "+ Series.numTimesCalled);
 		
-		Series.numTimesCalled = 0;
-		Series obj2 = new Series();
-		System.out.println(obj2.series1(5));
-		System.out.println("the number of times the method is called is "+ Series.numTimesCalled);
-
+		System.out.println(Integer.MAX_VALUE);
 		
-		ReverseLOL obj3 = new ReverseLOL();
+		BigInteger p = new BigInteger(Integer.MAX_VALUE);
 		
-		System.out.println(obj3.reverse(15));
-		
+		System.out.println(p);
 
 	}
 
